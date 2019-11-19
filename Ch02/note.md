@@ -22,6 +22,6 @@ import一个模块时例如import sys，可打印sys.path来知道该模块所�
 if size < 0:
 raise ValueError('number must be non􏳸negative')
 ```
-## UNBOUND 􏰡􏷇变量
+## UNBOUND变量
 python可以不声明这个变量直接赋值，但不支持引用变量却从不赋值
 ## 所有名称区分大小写
