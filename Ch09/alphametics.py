@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: Jiang Ji
+# @Date:   2020-04-06 13:50:55
+# @Last Modified by:   Jiang Ji
+# @Last Modified time: 2020-04-06 14:18:46
 '''
 python 3.7.5
 '''
@@ -5,7 +10,18 @@ import re
 import itertools
 
 def solve(puzzle):
-    # 将输入拆分成一个个单词
+    '''将输入拆分成一个个单词
+    
+    Parameters
+    ----------
+    puzzle : [type]
+        [description]
+    
+    Returns
+    -------
+    [type]
+        [description]
+    '''
     words = re.findall('[A-Z]+',puzzle.upper()) # findall接受一个正则表达式和字符串作为输入
     unique_characters = set(''.join(words))
     assert len(unique_characters) <= 10, 'Too many letters'
