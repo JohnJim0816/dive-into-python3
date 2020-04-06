@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class Fib: # 类名通常大写字母分隔
     '''生成斐波那契数列的迭代器''' # 与模块和方法一样，类应该具有docstring，且可以通过print(fib.__doc__)打印出
     def __init__(self,max): # __init__方法，跟c++中的构造函数不同，调用该方法时，对象已经创建了
@@ -5,7 +6,7 @@ class Fib: # 类名通常大写字母分隔
     def __iter__(self):
         self.a=0
         self.b=1
-        return self
+        return self        
     def __next__(self):
         fib=self.a
         if fib > self.max: # 这个self.max跟__init__()方法中的max完全是两回事，self.max是实例内"全局"的，可以在其他方法中访问
