@@ -1,9 +1,17 @@
 # -*- coding: utf-8 -*-
+# @Author: Jiang Ji
+# @Date:   2020-04-06 14:04:04
+# @Last Modified by:   Jiang Ji
+# @Last Modified time: 2020-04-06 14:22:31
+
 class Fib: # 类名通常大写字母分隔
+
+
     '''生成斐波那契数列的迭代器''' # 与模块和方法一样，类应该具有docstring，且可以通过print(fib.__doc__)打印出
     def __init__(self,max): # __init__方法，跟c++中的构造函数不同，调用该方法时，对象已经创建了
         self.max=max # 每个方法的第一个参数，包括__init()__方法，永远指向当前的类对象，该参数叫self，跟c++中的this一样
     def __iter__(self):
+        
         self.a=0
         self.b=1
         return self        
